@@ -1,7 +1,7 @@
 # To create thumbnails out of all the jpg s in the directory 
 # 
 # 
- set -v -x 
+# set -v -x 
 
 THUMBS_DIR="thumbs_${RANDOM}"
 
@@ -18,5 +18,14 @@ done
 echo "Done converting" 
 echo "Thumbs in the dir ${THUMBS_DIR}" 
 
+echo "Generating html for the thumbs" 
 
+for fil in `ls *.jpg`
+do 
+
+echo " 	<a href=\"images/art/${fil}\" title=\"${fil%.*}\" rel=\"welcm.html\">
+		<img src=\"images/thumbs/${fil%.*}_thumb.jpg\" alt=\"Gallery painting\" />  
+        </a> "
+				 	 
+done 
 
