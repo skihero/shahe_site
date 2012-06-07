@@ -1,10 +1,11 @@
 # To create thumbnails out of all the jpg s in the directory 
 # 
 # 
-# set -v -x 
+ set -v -x 
 
 THUMBS_DIR="thumbs_${RANDOM}"
 
+mkdir $THUMBS_DIR
 
 echo "Creating the ${THUMBS_DIR}..." 
 echo "Starting conversion " 
