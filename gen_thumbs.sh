@@ -3,7 +3,7 @@
 # 
 # set -v -x 
 
-THUMBS_DIR="thumbs_${RAND}"
+THUMBS_DIR="thumbs_${RANDOM}"
 
 
 echo "Creating the ${THUMBS_DIR}..." 
